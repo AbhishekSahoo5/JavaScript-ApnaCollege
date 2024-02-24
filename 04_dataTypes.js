@@ -30,7 +30,7 @@ console.log(n,"---------->", typeof n);
 let z=undefined;
 console.log(z,"---------->", typeof z);
 
-//No-primitive Datatypes
+//**********No-primitive Datatypes****************
 // Objects------------> Array, functions
 //Object is a collection of values of different datatypes.
 
