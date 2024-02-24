@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Prompt the user to enter their fullname. Generate a username for them based on the input. start username with @ followd by their fullname and ending with the fullname length</h2>
+</body>
+<script>
+    let name=prompt("Enter your fullname without space in between");
+    let len=name.length;
+    let username="@"+name;
+    username=username.concat(len);
+    alert(username);
+    
+</script>
+</html>
