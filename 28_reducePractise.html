@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+Take a number n as input from user. Create an array of numbers from 1 to n.
+---Use reduce method to calculate sum of all numbers in the array.
+---Use the reduce method to calculate product of all numbers in the array
+*/
+
+let n=prompt("Enter a number");
+let arr=[];
+for(let i=1;i<=n;i++)
+{
+    arr[i-1]=i;
+}
+let sum=arr.reduce((prev,curr)=>{
+    return prev+curr;
+});
+
+let product=arr.reduce((prev,curr)=>{
+    return prev*curr;
+});
+
+alert(`Sum=${sum} Product=${product}`);
+
+
+</script>
+</html>
