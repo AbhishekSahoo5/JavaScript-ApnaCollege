@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        What is DOM??
+        hen a web page is loaded, the browser creates a Dcoument Object Model(DOM) of the page.
+
+        **console.log()-----Just prints the objects as an element.
+
+        **console.dir()-----prints the properties and methods of the object.
+
+
+
+     -->
+     <div>hey this is Abhishek</div>
+</body>
+<script>
+    console.log(document.body);
+    console.dir(document.body); 
+    console.log(document.head);
+
+    console.log(document.body.childNodes[3]);
+
+    document.body.style.color="red";
+    document.body.childNodes[3].innerText="Abhishek";
+
+    
+</script>
+</html>
+

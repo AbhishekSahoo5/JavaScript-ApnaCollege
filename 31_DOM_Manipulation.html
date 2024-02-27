@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="name">Abhishek</div>
+    <h1 class="head1">DOM Demo by Abhishek</h1>
+    <h1 class="head1">DOM Demo by Abhishek</h1>
+    <h1 class="head1">DOM Demo by Abhishek</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nulla mollitia suscipit quasi qui non nesciunt labore? Voluptatum, ea pariatur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nulla mollitia suscipit quasi qui non nesciunt labore? Voluptatum, ea pariatur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nulla mollitia suscipit quasi qui non nesciunt labore? Voluptatum, ea pariatur!</p>
+</body>
+<script>
+    /*
+    Selecting with id
+        ---document.getElementById("myId");
+
+    Selecting with class
+        ---document.getElementByClassName("myClass");
+
+    Selecting with tag
+        ---document.getElementByTagName("p");
+
+    Query Selector
+        ---document.querySelector("myId / myClass / tag");
+                    --returns first element
+
+        ---document.querySelectorAll("myId / myClass / tag");
+                    --returns a NodeList
+
+
+
+    */
+    let name=document.getElementById("name");
+    console.log(name);
+    console.dir(name);
+
+    let h=document.getElementsByClassName("head1");
+    console.log(h);
+    console.dir(h);
+    // It return HTML Collections
+    let t=document.getElementsByTagName("h1");
+    console.log(t);
+    console.dir(t);
+
+    let elements=document.querySelector("p");
+    console.log(elements);
+    console.dir(elements);
+
+    
+    let elements2=document.querySelectorAll("p");
+    console.log(elements2);
+    console.dir(elements2);
+
+</script>
+</html>
