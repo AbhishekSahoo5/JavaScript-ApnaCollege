@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practise</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Q)Create a new button elemenet. Give it a text "click me", background color of red & text color of white.
+    Insert the button a the first element inside the body tag.-->
+</body>
+<script>
+    let btn=document.createElement("button");
+    btn.innerText="click me";
+
+    btn.style.backgroundColor="red";
+    btn.style.color="white";
+    document.querySelector("body").prepend(btn);
+</script>
+</html>
