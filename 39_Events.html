@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            margin:10px;
+            height:100px;
+            width:100px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline event handling -->
+    <button id="btn1">Click me</button>
+
+    <button ondblclick="alert('button was clicked double');">Double Click me</button>
+
+    <div id="div">This is a box</div>
+</body>
+<script>
+    let btn1=document.querySelector("#btn1");
+    btn1.onclick=(e)=>{
+        console.log(e);
+        console.log(e.target);
+        console.log(e.type);
+        alert('button was clicked');
+    };
+
+    let blueDiv=document.querySelector("#div");
+    blueDiv.onmouseover=(evt)=>{
+        console.log(evt);
+        console.log(evt.target);
+        console.log(evt.type);
+        alert('You are inside blue div');
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    // Events in JS
+/*
+The change in the state of an object is known as an Event.
+
+Events are fired to notify code of "interesting changes" that may affect code extension.
+
+--Mouse events(click, double click etc..)
+--keyboard events(keypress, keyup, keydown)
+--Form events(submit etc..)
+--print event & many more
+
+
+        //Event Object
+    ---It is a special object that has details about the event.
+    ---All event handlsers have access to the Event Object's properties and methods.
+
+    node.event=(e)=>{
+        //hanlde here
+    }
+    e.target, e.type, e.clientX, e.clientY
+*/
+
+</script>
+</html>

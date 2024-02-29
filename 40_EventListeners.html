@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin:10px;
+            height:100px;
+            width:100px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Click me</button>
+
+    <button ondblclick="alert('button was clicked double');">Double Click me</button>
+
+    <div id="div">This is a box</div>
+</body>
+<script>
+    /*
+node.addEventListener(event,callBack)
+node.removeEventListener(event,callback)
+
+*Note: the callback reference should be same to remove
+*/
+
+    let btn1=document.querySelector("#btn");
+
+    btn1.addEventListener("click",(evt)=>{
+        console.log("Button1 was created handler1");
+    });
+    btn1.addEventListener("click",()=>{
+        console.log("Button1 was created - handler2");
+    });
+
+    const handler3=btn1.addEventListener("click",()=>{
+        console.log("Button1 was created - handler3");
+    });
+
+    btn1.removeEventListener("click",()=>{
+        console.log("Button1 was created - handler3");
+    });
+
+</script>
+</html>
